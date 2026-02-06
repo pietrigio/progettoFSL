@@ -1,2 +1,2 @@
 # progettoFSL
-owner De Col, collaboratore Dal Pan
+Progetto per la creazione di un'interfaccia scritta in React per una start-up locale
