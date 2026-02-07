@@ -3,19 +3,15 @@
 Questa repository contiene il progetto di formazione scuola-lavoro 2025-2026 di
 Pietro De Col ed Enrico Dal Pan.
 
-Questo progetto consiste nella creazione del front end di un'applicazione web di
+Questo progetto consiste nella creazione del frontend di un'applicazione web di
 intelligenza artificiale per un'azienda start-up di Belluno, utilizzando il
 framework React per JavaScript.
+Oltre al frontend e' presente anche un backend scritto in fast api per simulare
+quello presente nel server.
 Il progetto riguarda un sistema RAG per chatbot, che ha il compito di recuperare
 dati (ad esempio verbali o documenti privati) e generare una risposta a partire
-da essi.
+da essi, tramite un collegamento web socket.
 
-Il sistema utilizza un modello LLM (Large Language Model), che rappresenta il
-"cervello" dell’applicazione: una grande massa di numeri, paragonabile al
-funzionamento del cervello umano.
-In questo caso il sistema utilizza un modello da 120 miliardi di parametri.
-La comunicazione avviene tramite API, che inviano la risposta a una nostra
-richiesta in streaming, utilizzando i WebSocket durante la fase di inferenza.
 
 ## Funzionalita':
 
@@ -35,4 +31,6 @@ file PDF;
 
 I prossi passi nel development sono:
 - Aggiunta interfaccia: sidebar per indici e prompt stile chatgpt;
-- Optional: keyboard shortcuts; 
+- Transizionare il backend da quello corrente a fast api;
+- In base al nome dell'indice il modello dovra' generare un titolo adeguato;
+- Optional: keyboard shortcuts;
