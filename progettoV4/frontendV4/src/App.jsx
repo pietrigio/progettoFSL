@@ -6,7 +6,7 @@ export default function App() {
   const [chats, setChats] = useState([]);
   const [activeChatId, setActiveChatId] = useState(null);
 
-  // 🔹 CARICA CHAT DAL BACKEND FASTAPI
+  // CARICA CHAT DAL BACKEND FASTAPI
   useEffect(() => {
     fetch("http://127.0.0.1:8000/chats")
       .then(r => r.json())
