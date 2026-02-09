@@ -9,7 +9,8 @@ framework React di JavaScript.
 Oltre al frontend e' presente anche un backend scritto in Fast Api per simulare
 quello presente nel server.
 
-TODO:cambierei questo paragrafo, non credo che serva andare cosi' nello specifico
+**cambierei questo paragrafo, non credo che serva andare cosi' nello specifico**
+
 Il progetto riguarda un sistema RAG per chatbot, che ha il compito di recuperare
 dati (ad esempio verbali o documenti privati) e generare una risposta a partire
 da essi, tramite un collegamento web socket.
