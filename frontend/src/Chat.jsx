@@ -2,51 +2,85 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Chat({ chat, onUpdate }) {
   const [input, setInput] = useState("");
+  const [localMessages, setLocalMessages] = useState(chat.messages);
   const wsRef = useRef(null);
 
+  // sincronizza messaggi quando cambio chat
+  useEffect(() => {
+    setLocalMessages(chat.messages);
+  }, [chat]);
+
+  // crea websocket UNA SOLA VOLTA
   useEffect(() => {
     wsRef.current = new WebSocket("ws://127.0.0.1:8000/ws");
 
-    wsRef.current.onmessage = e => {
+    wsRef.current.onmessage = (e) => {
       if (e.data === "__END__") return;
 
-      const messages = [...chat.messages];
-      messages[messages.length - 1].text += e.data;
+      setLocalMessages((prev) => {
+        const updated = [...prev];
+        const lastIndex = updated.length - 1;
 
-      onUpdate({ ...chat, messages });
+        updated[lastIndex] = {
+          ...updated[lastIndex],
+          text: updated[lastIndex].text + e.data,
+        };
+
+        // aggiorno anche stato globale
+        onUpdate({
+          ...chat,
+          messages: updated,
+        });
+
+        return updated;
+      });
     };
 
-    return () => wsRef.current.close();
-  }, [chat]);
+    return () => {
+      wsRef.current?.close();
+    };
+  }, []);
+
+  if (!chat) return null;
 
   function send() {
     if (!input.trim()) return;
 
-    const updatedChat = { ...chat };
+    const question = input;
 
-    // titolo = primo messaggio
-    if (updatedChat.messages.length === 0) {
-      updatedChat.title = input.slice(0, 30);
-    }
+    const newMessages = [
+      ...localMessages,
+      { role: "user", text: question },
+      { role: "bot", text: "" },
+    ];
 
-    updatedChat.messages.push({ role: "user", text: input });
-    updatedChat.messages.push({ role: "bot", text: "" });
+    setLocalMessages(newMessages);
+
+    const updatedChat = {
+      ...chat,
+      title:
+        chat.messages.length === 0
+          ? question.slice(0, 30)
+          : chat.title,
+      messages: newMessages,
+    };
 
     onUpdate(updatedChat);
 
-    wsRef.current.send(JSON.stringify({ question: input }));
+    wsRef.current.send(JSON.stringify({ question }));
+
     setInput("");
   }
 
   return (
     <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
       <div style={{ flex: 1, padding: "20px", overflowY: "auto" }}>
-        {chat.messages.map((m, i) => (
+        {localMessages.map((m, i) => (
           <div
             key={i}
             style={{
               textAlign: m.role === "user" ? "right" : "left",
-              marginBottom: "10px"
+              marginBottom: "10px",
             }}
           >
             <span
@@ -54,7 +88,8 @@ export default function Chat({ chat, onUpdate }) {
                 padding: "8px",
                 background: m.role === "user" ? "#007bff" : "#eee",
                 color: m.role === "user" ? "#fff" : "#000",
-                borderRadius: "6px"
+                borderRadius: "6px",
+                display: "inline-block",
               }}
             >
               {m.text}
@@ -66,8 +101,8 @@ export default function Chat({ chat, onUpdate }) {
       <div style={{ display: "flex", padding: "10px" }}>
         <input
           value={input}
-          onChange={e => setInput(e.target.value)}
-          onKeyDown={e => e.key === "Enter" && send()}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && send()}
           style={{ flex: 1 }}
           placeholder="Scrivi un messaggio..."
         />
