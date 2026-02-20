@@ -1,0 +1,373 @@
+[
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "prova2.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/prova2.txt"
+      },
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      },
+      {
+        "filename": "prova2.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/prova2.txt"
+      }
+    ],
+    "query": "npm"
+  },
+  {
+    "role": "user",
+    "text": "FastApi"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"FastApi\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      }
+    ],
+    "query": "FastApi"
+  },
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      },
+      {
+        "filename": "prova2.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/prova2.txt"
+      }
+    ],
+    "query": "npm"
+  },
+  {
+    "role": "user",
+    "text": "s"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"s\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      }
+    ],
+    "query": "s"
+  },
+  {
+    "role": "user",
+    "text": "ciao"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"ciao\"",
+    "files": [],
+    "query": "ciao"
+  },
+  {
+    "role": "user",
+    "text": "ok"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"ok\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      }
+    ],
+    "query": "ok"
+  },
+  {
+    "role": "user",
+    "text": "ciao"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"ciao\"",
+    "files": [],
+    "query": "ciao"
+  },
+  {
+    "role": "user",
+    "text": "ciao"
+  },
+  {
+    "role": "bot",
+    "text": "\"ciao\" non è presente in nessun file.",
+    "files": [],
+    "query": "ciao"
+  },
+  {
+    "role": "user",
+    "text": "mpm"
+  },
+  {
+    "role": "bot",
+    "text": "\"mpm\" non è presente in nessun file.",
+    "files": [],
+    "query": "mpm"
+  },
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      },
+      {
+        "filename": "prova2.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/prova2.txt"
+      }
+    ],
+    "query": "npm"
+  },
+  {
+    "role": "user",
+    "text": "ciao"
+  },
+  {
+    "role": "bot",
+    "text": "\"ciao\" non è presente in nessun file.",
+    "files": [],
+    "query": "ciao"
+  },
+  {
+    "role": "user",
+    "text": "Api"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"Api\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      }
+    ],
+    "query": "Api"
+  },
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      },
+      {
+        "filename": "prova2.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/prova2.txt"
+      }
+    ],
+    "query": "npm"
+  },
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      },
+      {
+        "filename": "prova2.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/prova2.txt"
+      }
+    ],
+    "query": "npm"
+  },
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      }
+    ],
+    "query": "npm"
+  },
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      },
+      {
+        "filename": "prova2.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/prova2.txt"
+      }
+    ],
+    "query": "npm"
+  },
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "npm.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/npm.txt"
+      },
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      },
+      {
+        "filename": "prova2.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/prova2.txt"
+      }
+    ],
+    "query": "npm"
+  },
+  {
+    "role": "user",
+    "text": "api"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"api\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      }
+    ],
+    "query": "api"
+  },
+  {
+    "role": "user",
+    "text": "ciao"
+  },
+  {
+    "role": "bot",
+    "text": "\"ciao\" non è presente in nessun file.",
+    "files": [],
+    "query": "ciao"
+  },
+  {
+    "role": "user",
+    "text": "api"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"api\"",
+    "files": [
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      }
+    ],
+    "query": "api"
+  },
+  {
+    "role": "user",
+    "text": "npm"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"npm\"",
+    "files": [
+      {
+        "filename": "prova2.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/prova2.txt"
+      },
+      {
+        "filename": "npm.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/npm.txt"
+      },
+      {
+        "filename": "nuovo.txt",
+        "download_url": "http://127.0.0.1:8000/download/prova1/nuovo.txt"
+      }
+    ],
+    "query": "npm"
+  }
+]
