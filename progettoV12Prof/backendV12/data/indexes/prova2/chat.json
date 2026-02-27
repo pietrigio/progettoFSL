@@ -1,0 +1,72 @@
+[
+  {
+    "role": "user",
+    "text": "ombre"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"ombre\"",
+    "files": [
+      {
+        "filename": "storia_inventata.pdf",
+        "download_url": "http://127.0.0.1:8000/download/prova2/storia_inventata.pdf"
+      }
+    ],
+    "query": "ombre"
+  },
+  {
+    "role": "user",
+    "text": "ergaefAF"
+  },
+  {
+    "role": "bot",
+    "text": "\"ergaefAF\" non è presente in nessun file.",
+    "files": [],
+    "query": "ergaefAF"
+  },
+  {
+    "role": "user",
+    "text": "O"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"O\"",
+    "files": [
+      {
+        "filename": "storia_inventata.pdf",
+        "download_url": "http://127.0.0.1:8000/download/prova2/storia_inventata.pdf"
+      }
+    ],
+    "query": "O"
+  },
+  {
+    "role": "user",
+    "text": "ombre"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"ombre\"",
+    "files": [
+      {
+        "filename": "storia_inventata.pdf",
+        "download_url": "http://127.0.0.1:8000/download/prova2/storia_inventata.pdf"
+      }
+    ],
+    "query": "ombre"
+  },
+  {
+    "role": "user",
+    "text": "in"
+  },
+  {
+    "role": "bot",
+    "text": "Ecco i file in base a \"in\"",
+    "files": [
+      {
+        "filename": "storia_inventata.pdf",
+        "download_url": "http://127.0.0.1:8000/download/prova2/storia_inventata.pdf"
+      }
+    ],
+    "query": "in"
+  }
+]
